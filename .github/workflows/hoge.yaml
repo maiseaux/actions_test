@@ -9,6 +9,8 @@ on:
 
 jobs:
   hoge:
+    environment:
+        name: dev
     runs-on: ubuntu-latest
     steps:
       - name: Inputs
