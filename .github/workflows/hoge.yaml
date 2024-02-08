@@ -1,0 +1,17 @@
+name: Hoge
+
+on:
+  workflow_dispatch:
+    inputs:
+      hoge:
+        description: hoge
+        default: "hoge"
+
+jobs:
+  hoge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Inputs
+        run: echo ${{ github.event.inputs.hoge }}
+      - name: Hoge
+        uses: ./.github/actions/hoge

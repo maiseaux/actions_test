@@ -1,0 +1,9 @@
+name: Hoge
+description: hoge
+
+runs:
+  using: composite
+  steps:
+    - name: Hello
+      shell: bash
+      run: echo ${{ vars.HOGE }}
