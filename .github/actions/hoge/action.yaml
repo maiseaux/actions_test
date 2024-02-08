@@ -1,9 +1,14 @@
 name: Hoge
 description: hoge
+inputs:
+  hoge:
+    description: hoge
+    required: true
+    default: "hoge"
 
 runs:
   using: composite
   steps:
     - name: Hello
       shell: bash
-      run: echo ${{ vars.HOGE }}
+      run: echo ${{ inputs.HOGE }}
